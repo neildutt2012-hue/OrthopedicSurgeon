@@ -1,51 +1,412 @@
-<!-- Hero Section -->
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neil Dutt | Healthcare & Innovation Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(circle at 20% 20%, rgba(0,150,255,.15), transparent 30%),
+    radial-gradient(circle at 80% 30%, rgba(0,100,255,.15), transparent 35%),
+    radial-gradient(circle at 50% 80%, rgba(0,180,255,.12), transparent 40%);
+    z-index:-1;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    backdrop-filter:blur(15px);
+    background:rgba(5,8,22,.75);
+    border-bottom:1px solid rgba(255,255,255,.08);
+    z-index:1000;
+}
+
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    padding:18px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:1.2rem;
+    font-weight:800;
+    letter-spacing:2px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#4ea8ff;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 20px 80px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:5rem;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    color:#4ea8ff;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+.hero p{
+    color:#bfc9d9;
+    line-height:1.8;
+    font-size:1.1rem;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:12px;
+    text-decoration:none;
+    background:#1677ff;
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:90px 25px;
+}
+
+.section-title{
+    font-size:2.3rem;
+    margin-bottom:35px;
+    text-align:center;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    padding:25px;
+    border-radius:18px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:12px;
+    color:#5db0ff;
+}
+
+.card p{
+    color:#c9d3df;
+    line-height:1.7;
+}
+
+.about{
+    text-align:center;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.9;
+    color:#c9d3df;
+}
+
+.timeline{
+    border-left:2px solid #1677ff;
+    padding-left:25px;
+}
+
+.timeline-item{
+    margin-bottom:35px;
+}
+
+.timeline-item h3{
+    color:#5db0ff;
+}
+
+.skills{
+    display:grid;
+    gap:20px;
+}
+
+.skill{
+    background:rgba(255,255,255,.05);
+    padding:18px;
+    border-radius:12px;
+}
+
+.skill-bar{
+    height:8px;
+    background:#111827;
+    border-radius:50px;
+    margin-top:10px;
+}
+
+.skill-fill{
+    height:100%;
+    background:#1677ff;
+    border-radius:50px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    color:#c9d3df;
+    margin-bottom:15px;
+}
+
+footer{
+    text-align:center;
+    padding:35px;
+    border-top:1px solid rgba(255,255,255,.08);
+    color:#8892a6;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="nav-container">
+<div class="logo">NEIL DUTT</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#journey">Journey</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#vision">Vision</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
 
 <section class="hero">
-    <div class="overlay">
-        <h1>Neil Dutt</h1>
-        <p class="subtitle">
-            Student • Future Healthcare Leader • Innovator
-        </p>
+<div class="hero-content">
 
-```
-    <p class="intro">
-        Passionate about medicine, science, technology, and the future of
-        healthcare. Driven by curiosity, continuous learning, and a desire
-        to create meaningful impact through innovation and patient care.
-    </p>
+<h1>Neil Dutt</h1>
 
-    <a href="#journey" class="btn">Explore My Journey</a>
+<h2>Student • Healthcare Enthusiast • Innovator</h2>
+
+<p>
+Passionate about medicine, science, technology, and innovation.
+I am driven by curiosity, continuous learning, and the desire
+to contribute to the future of healthcare through knowledge,
+research, and impactful ideas.
+</p>
+
+<a href="#about" class="btn">Explore My Portfolio</a>
+
 </div>
-```
-
 </section>
 
-<!-- About -->
+<section id="about">
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+<p>
+I am a student with a strong interest in medicine, science,
+problem-solving, and emerging technologies. I enjoy exploring
+how scientific discoveries and innovation can improve lives.
+My academic journey is focused on building a strong foundation
+in mathematics, science, critical thinking, and leadership.
+</p>
+</div>
+</section>
 
 <section id="journey">
-    <div class="glass-card">
-        <h2>My Vision</h2>
+<h2 class="section-title">Academic Journey</h2>
 
-```
-    <p>
-        I am a student with a deep interest in medicine and healthcare.
-        I am fascinated by how the human body functions, adapts, and heals,
-        and I enjoy exploring the science behind modern medical treatments.
-    </p>
+<div class="timeline">
 
-    <p>
-        Beyond medicine, I have a strong passion for technology,
-        artificial intelligence, and innovation. I believe the future of
-        healthcare will be shaped by the combination of scientific
-        knowledge, advanced technology, and human-centered care.
-    </p>
-
-    <p>
-        My goal is to continue developing my skills, expanding my
-        knowledge, and contributing to a future where healthcare is more
-        effective, accessible, and innovative for everyone.
-    </p>
+<div class="timeline-item">
+<h3>Mathematics</h3>
+<p>
+Developing advanced mathematical reasoning through contests,
+problem solving, and independent learning.
+</p>
 </div>
-```
 
+<div class="timeline-item">
+<h3>Science</h3>
+<p>
+Exploring biology, human anatomy, healthcare, and scientific
+research to better understand the world around us.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>Technology</h3>
+<p>
+Learning programming and artificial intelligence while
+building personal projects that combine innovation and
+real-world applications.
+</p>
+</div>
+
+</div>
 </section>
+
+<section id="skills">
+<h2 class="section-title">Skills & Interests</h2>
+
+<div class="skills">
+
+<div class="skill">
+Problem Solving
+<div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+</div>
+
+<div class="skill">
+Science
+<div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
+</div>
+
+<div class="skill">
+Mathematics
+<div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+Technology
+<div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+</div>
+
+<div class="skill">
+Leadership
+<div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+</div>
+
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title">Projects & Innovation</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Artificial Intelligence</h3>
+<p>
+Exploring AI systems, intelligent assistants, and the future
+role of technology in solving complex problems.
+</p>
+</div>
+
+<div class="card">
+<h3>Programming</h3>
+<p>
+Learning software development and building projects that
+combine creativity, logic, and innovation.
+</p>
+</div>
+
+<div class="card">
+<h3>Healthcare Technology</h3>
+<p>
+Interested in how technology can improve patient outcomes,
+medical research, and healthcare accessibility.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="vision">
+<h2 class="section-title">Future Vision</h2>
+
+<div class="card">
+<p>
+My goal is to continue growing academically and personally
+while pursuing opportunities to contribute to healthcare,
+innovation, and scientific advancement. I believe that
+combining knowledge, discipline, and creativity can lead to
+meaningful improvements in people's lives and the future of
+medicine.
+</p>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
+<p>Email: your-email@example.com</p>
+<p>Location: Canada</p>
+<p>Open to academic, leadership, and innovation opportunities.</p>
+</div>
+</section>
+
+<footer>
+© 2026 Neil Dutt | Personal Portfolio
+</footer>
+
+</body>
+</html>
+```
